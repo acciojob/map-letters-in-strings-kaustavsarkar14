@@ -1,5 +1,5 @@
 //your JS code here. If required.
-// const s = prompt()
+const s = prompt()
 function mapLetters(s) { 
 	const letterMap = {}
 	for(let i=0; i<s.length; i++){
@@ -8,7 +8,7 @@ function mapLetters(s) {
 	  else
 	    letterMap[s[i]].push(i)
 	}
-	console.log(letterMap)
+	alert(JSON.stringify(letterMap))
 	return letterMap
 }
 mapLetters(s)
